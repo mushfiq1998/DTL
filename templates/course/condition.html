@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: red;
+        }
+    </style>
+    <title> Django </title>
+</head>
+<body>
+    Personal Information:<br>
+    Name: {{Name}}<br> 
+    Institute:  {{Institute}} <br>
+    Subject: {{Subject}} <br>
+    CGPA: {{CGPA}} <br>
+    Hobby: {{Hobby}} <br>
+    Designation: {{Designation}}<br>
+    Award: {{Award}}<br>  
+    <h4>.............................</h4>
+
+    {% if Name %}
+        Hello {{Name}}
+    {% endif %}
+
+</body>
+</html>
